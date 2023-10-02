@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Tugas PAB modul 02 Counter </title>
+    </head>
+    <body>
+        <h1>Pengenalan React Tingkat Dasar</h1>
+        <h2>Counter</h2>
+        <p>
+            <span id="totalClicks">0</span> <br>
+            <button onClick="totalClick(-1)">-1</button>
+            <button onClick="totalClick(1)">+1</button>
+        </p>
+
+        <script>
+            const totalClick = (click) => {
+                const totalClicks = document.getElementById('totalClicks');
+                const sumvalue = parseInt(totalClicks.innerText) + click;
+                console.log(sumvalue + click);
+                totalClicks.innerText = sumvalue;             
+            }
+        </script>
+    </body>
+</html>
